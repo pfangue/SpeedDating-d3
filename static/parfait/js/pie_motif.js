@@ -1,4 +1,4 @@
-function pie(item){
+function pie_chart(item){
 	var width = 450
     height = 450
     margin = 40

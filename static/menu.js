@@ -258,7 +258,7 @@ function update(source) {
 					hobbies("#graphDiv2");
 					break;
 				case "pie_motif.js":
-					pie("#graphDiv2");
+					pie_chart("#graphDiv2");
 					break;
 				case "histo_dynamique.js":
 					histo_dynamique("#graphDiv2");
