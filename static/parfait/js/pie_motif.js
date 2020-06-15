@@ -1,4 +1,4 @@
-function pie_motif(item){
+function pie(item){
 	var width = 450
     height = 450
     margin = 40
