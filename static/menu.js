@@ -5,26 +5,26 @@ var treeData =
 		{
 			"name":"Profile",
 			"children":[
-			{
-			  "name": "Race",
-			  "action": "bar_race.js"
-			},
-			{
-			  "name": "Qualities",
-			  "action": "plots.js"
-			},
-			{
-			  "name": "Age",
-			  "action": "bar_age.js"
-			},
-			{
-			  "name": "Jobs",
-			  "action": "bar_pro.js"
-			},    
-			{
-			  "name": "Hobby",
-			  "action": "hobbies_2.js"
-			}
+				{
+				  "name": "Race",
+				  "action": "bar_race.js"
+				},
+				{
+				  "name": "Qualities",
+				  "action": "plots.js"
+				},
+				{
+				  "name": "Age",
+				  "action": "bar_age.js"
+				},
+				{
+				  "name": "Jobs",
+				  "action": "bar_pro.js"
+				},    
+				{
+				  "name": "Hobby",
+				  "action": "hobbies_2.js"
+				}
 			]
 		},
         {

@@ -11,10 +11,10 @@ var margin = {top: 20, right: 30, bottom: 40, left: 400},
     //height = 400 - margin.top - margin.bottom;
     height = 400 - margin.top;**/
 
-var body=d3.select(item)
-body.select('svg').remove()
+
+
 // append the svg object to the body of the page
-var svg_match = body
+var svg_match = d3.select(item)
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -68,7 +68,7 @@ d3.csv("static/parfait/data/SpeedDatingMatch.csv", function(data) {
   // ----------------
   // Create a tooltip
   // ----------------
-  var tooltip = d3.select("#bar_match")
+  var tooltip = d3.select(item)
     .append("div")
     .style("opacity", 0)
     .attr("class", "tooltip")
