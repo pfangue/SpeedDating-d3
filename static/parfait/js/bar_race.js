@@ -9,6 +9,29 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
 var body=d3.select(item)
 body.select('svg').remove()
 
+// 1. Create the button
+// var button = document.createElement("button");
+// button.innerHTML = "Men";
+// var body_button = document.item.appendChild(button);
+// button.addEventListener ("click", function() {
+  // update1(data1);
+// });
+
+// var rect = d3.select(item).append("button")
+	// .attr("width", 10)
+	// .attr("height", 10); 
+
+// rect.on('click', function() {
+  // console.log('i was clicked');
+// });
+	
+// var button = document.createElement("button");
+// button.innerHTML = "Women";
+// var body_button = document.body.appendChild(button);
+// button.addEventListener ("click", function() {
+  // update1(data2);
+// });
+
 // append the svg object to the body of the page
 var svg_race =body
   .append("svg")

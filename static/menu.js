@@ -2,24 +2,38 @@ var treeData =
   {
       "name": "Gender",
       "children": [
-        {
-          "name": "Race",
-          "action": "bar_race.js"
-        },
-        {
-          "name": "Age",
-          "action": "bar_age.js"
-        },
-        {
-          "name": "Jobs",
-          "action": "bar_pro.js"
-        },    
-        {
-          "name": "Hobby"
-        },
+		{
+			"name":"Profile",
+			"children":[
+			{
+			  "name": "Race",
+			  "action": "bar_race.js"
+			},
+			{
+			  "name": "Qualities",
+			  "action": "plots.js"
+			},
+			{
+			  "name": "Age",
+			  "action": "bar_age.js"
+			},
+			{
+			  "name": "Jobs",
+			  "action": "bar_pro.js"
+			},    
+			{
+			  "name": "Hobby",
+			  "action": "hobbies_2.js"
+			}
+			]
+		},
         {
           "name": "Match",
           "action": "bar_match.js"
+        },
+        {
+          "name": "Reasons",
+          "action": "pie_motif.js"
         }
       ]
     }
@@ -216,6 +230,7 @@ function update(source) {
 
   // Toggle children on click.
   function click(d) {
+	 d3.select("#graphDiv2").selectAll('*').remove()
     if (d.children) {
         d._children = d.children;
         d.children = null;
@@ -234,6 +249,19 @@ function update(source) {
 					break;
 				case "bar_pro.js":
 					bar_pro("#graphDiv2");
+					break;
+				case "plots.js":
+					legend("#graphDiv2");
+					plots("#graphDiv2");
+					break;
+				case "hobbies_2.js":
+					hobbies("#graphDiv2");
+					break;
+				case "pie_motif.js":
+					pie_motif("#graphDiv2");
+					break;
+				case "histo_dynamique.js":
+					histo_dynamique("#graphDiv2");
 					break;
 				 default:
 					d3.select('#graphDiv2').select('svg').remove();

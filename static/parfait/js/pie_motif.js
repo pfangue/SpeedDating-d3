@@ -1,4 +1,5 @@
-var width = 450
+function pie_motif(item){
+	var width = 450
     height = 450
     margin = 40
 
@@ -6,7 +7,7 @@ var width = 450
 var radius = Math.min(width, height) / 2 - margin
 
 // append the svg object to the div called 'my_dataviz'
-var svg_motif = d3.select("#pie_motif")
+var svg_motif = d3.select(item)
   .append("svg")
     .attr("width", width)
     .attr("height", height)
@@ -73,3 +74,6 @@ function update3(data) {
 
 // Initialize the plot with the first dataset
 update3(data5)
+}
+
+
