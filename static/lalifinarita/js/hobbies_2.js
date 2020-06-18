@@ -79,8 +79,6 @@ function hobbies(item) {
       .attr("id", function (d, i) { return "group" + d.index; })
       .attr("class", "outer")
       .attr("d", arc)
-      .on("mouseover", fade(100))
-      .on("mouseout", fade(.1))
 
     outerArcs.append("text")
       .attr("x", 6)
@@ -98,20 +96,9 @@ function hobbies(item) {
         + " -> "
         + names[d.target.index]
         + " : "
-        + d.source.value 
-        + " % "
+        + Math.round(d.source.value * 100)
+        +" %" 
     });
-
-    function fade(opacity) {
-      return function (d, i) {
-        d3.selectAll("g.chord path")
-          .filter(function (d) {
-            return d.source.index == i && d.target.index != i;
-          })
-          .transition()
-          .style("opacity", opacity);
-      }
-    }
 
     function interact(opacity) {
       return function (d, i) {
