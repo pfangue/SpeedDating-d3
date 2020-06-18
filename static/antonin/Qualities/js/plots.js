@@ -1,7 +1,7 @@
 function plots(item){
 	// set the dimensions and margins of the graphs
 var margin = { top: 30, right: 30, bottom: 30, left: 60 },
-    width = 400 - margin.left - margin.right,
+    width = 400 - margin.left - margin.right, 
     height = 235 - margin.top - margin.bottom;
 
 // dictionary quality: column_name 
@@ -53,7 +53,7 @@ d3.csv("static/antonin/Qualities/data/SpeedDating.csv", function (data) {
         // plot title
         svg.append("text")
             .text(attr)
-            .attr("font-size", "20")
+            .style("font-size", "15")
             .attr("font-family", "sans-serif")
             .attr("text-anchor", "middle")
             .attr("alignment-baseline", "central")

@@ -1,13 +1,14 @@
 var treeData =
   {
-      "name": "Gender",
+      "name": "People",
       "children": [
 		{
 			"name":"Profile",
 			"children":[
 				{
 				  "name": "Race",
-				  "action": "bar_race.js"
+          //"action": "bar_race.js"
+          "action": "histo_dynamique.js"
 				},
 				{
 				  "name": "Qualities",
@@ -39,8 +40,8 @@ var treeData =
     }
 
 // Set the dimensions and margins of the diagram
-var margin = {top: 20, right: 90, bottom: 30, left: 90},
-    width = 960 - margin.left - margin.right,
+var margin = {top: 20, right: 165, bottom: 30, left: 165}, // 90
+    width = 960 - margin.left - margin.right, // 960
     height = 500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
