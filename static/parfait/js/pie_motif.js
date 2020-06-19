@@ -1,7 +1,7 @@
 function pie_chart(item){
 	var margin = {top: 100, right: 30, bottom: 30, left: 60},
       width = 450,
-    height = 450;
+    height = 550;
 
 
 // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
@@ -20,16 +20,10 @@ var svg_motif = d3.select(item)
     .attr("width", width)
     .attr("height", height)
   .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    .attr("transform", "translate(225,300)");
 
-/**svg_motif.append("text")
-  .attr("transform",
-            "translate(" + (width/2) + " ," + 
-                           (height /2) + ")")
-  .style("font-size", "15px") 
-  .text("Reasons for participating in speed dating");**/
 
-svg_motif.append("text").attr("x", 0).attr("y", -360).style("font-size", "16px")
+svg_motif.append("text").attr("x", 0).attr("y", -250).style("font-size", "16px")
     .attr("text-anchor", "middle")
     .text("Reasons for participating in speed dating")
 
